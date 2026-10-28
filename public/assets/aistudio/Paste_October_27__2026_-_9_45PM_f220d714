@@ -1,0 +1,1083 @@
+# MASTER PROMPT FOR GOOGLE AI STUDIO — PREMIUM, RESPONSIVE E-COMMERCE WEBSITE
+
+Act as a world-class UI/UX designer, senior frontend engineer, e-commerce conversion specialist, and full-stack web developer. Build a complete, professional, production-ready technology e-commerce website inspired by the visual style of the uploaded reference image.
+
+The website must preserve the reference's premium aesthetic: a clean white interface, sophisticated dark-green branding, spacious layouts, rounded product imagery, elegant product cards, a large promotional hero, refined typography, subtle shadows, and a deep-green footer. Create a completely original brand identity, original marketing copy, original layouts where appropriate, and unique visual assets. Do not copy the reference brand name, logo, exact text, or proprietary identity.
+
+The final result must look like a real online technology store designed by a professional agency for a paying client. It must be responsive, interactive, visually polished, accessible, fast-loading, and suitable for deployment on Hostinger.
+
+## 1. PROJECT OBJECTIVE
+
+Build a premium online electronics store selling products such as:
+
+- Smartphones and mobile devices
+- Laptops and computers
+- Headphones, earbuds, and audio equipment
+- Smartwatches and wearable technology
+- Gaming controllers and accessories
+- Chargers, cables, adapters, and other electronics accessories
+
+Create an original brand named **Nexora Tech**. Use this brand consistently across the website, page metadata, navigation, footer, shopping cart, and other relevant components.
+
+Brand personality:
+
+- Modern, trustworthy, premium, innovative, approachable, and customer-focused.
+- Visually sophisticated without feeling expensive or inaccessible.
+- Minimalist European-inspired e-commerce design with a subtle technology aesthetic.
+- Strong emphasis on product photography, clear prices, trustworthy service information, and conversion-focused shopping experiences.
+
+Use French as the default website language to match the general language direction of the reference. Write polished, natural French marketing copy throughout the interface. Use Algerian dinars (DA) for the default product currency and clearly communicate delivery coverage in Algeria. Centralize language, currency, shipping, tax, and store settings so they can be changed easily later.
+
+Do not build only a static screenshot. Create a functioning website with reusable components, working interactions, realistic product data, and complete shopping flows.
+
+## 2. TECHNOLOGY STACK AND IMPLEMENTATION
+
+Use a modern, maintainable frontend stack supported by Google AI Studio.
+
+Preferred stack:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React icons
+- React Router if multiple pages are implemented
+- A lightweight, reliable state-management approach using React Context or an equivalent solution
+
+Use the latest compatible, stable package versions available in the environment. Do not use deprecated APIs.
+
+Architecture requirements:
+
+- Build reusable components for the header, navigation, hero, category tiles, product cards, promotional banners, service-benefit strips, newsletter, footer, cart drawer, search, filters, and toast notifications.
+- Separate product data, configuration, components, and page layouts.
+- Use semantic HTML and accessible interactive elements.
+- Keep TypeScript types explicit and avoid unnecessary `any`.
+- Avoid monolithic components, duplicated code, and unnecessary dependencies.
+- Include all required project files, configuration, and installation instructions.
+- Ensure the application can run locally with standard npm commands.
+- Ensure the production build completes successfully.
+- Do not rely on features available only inside Google AI Studio at runtime.
+
+If a backend is not configured, implement a reliable frontend demo with clearly separated integration points for a future backend. Do not pretend that payments, orders, authentication, or emails are connected to real services when they are not.
+
+## 3. DESIGN SYSTEM AND VISUAL DIRECTION
+
+Create a distinctive, premium design system based on the reference's white, soft-neutral, and dark-green palette.
+
+### Color palette
+
+Use these colors as the starting design tokens:
+
+- Primary dark green: `#075B49`
+- Brand green: `#12866C`
+- Bright accent green: `#28A878`
+- Deep footer green: `#082F29`
+- Secondary forest green: `#124C40`
+- Pale green background: `#EDF6F1`
+- Mint surface: `#F4F8F6`
+- Main background: `#FFFFFF`
+- Soft gray background: `#F5F6F6`
+- Border gray: `#E6EBE8`
+- Primary text: `#17211F`
+- Secondary text: `#66716D`
+- Muted text: `#87918D`
+- Sale badge background: `#16865F`
+- Error state: `#C53C3C`
+- Success state: `#16865F`
+
+Use white as the dominant color. Apply dark green to the logo, primary buttons, active navigation indicators, key headings, icons, and selected accents. Reserve bright green for discounts, successful actions, and subtle highlights.
+
+Avoid excessive gradients, neon colors, strong outlines, or large areas of saturated green. The site should feel calm, refined, spacious, and premium.
+
+### Typography
+
+Use **Inter** or **Manrope** as the primary typeface, preferably loaded through a reliable font package or an optimized web font with a system-font fallback.
+
+Typography hierarchy:
+
+- Main hero headline: 44–56px desktop, bold, tight line height, carefully balanced across two or three lines.
+- Section headings: 28–34px desktop, bold, compact.
+- Product names: 14–16px, semibold.
+- Prices: 18–21px, bold, dark green.
+- Body copy: 14–16px, regular, readable line height.
+- Navigation: 13–14px, medium.
+- Labels and eyebrow text: 10–12px, semibold, uppercase where appropriate.
+- Mobile hero headline: approximately 34–40px.
+- Mobile section headings: approximately 23–28px.
+
+Use responsive typography with `clamp()` where suitable. Maintain consistent heading hierarchy, readable contrast, and line lengths.
+
+### Spacing and layout
+
+Use a consistent 4px or 8px spacing system.
+
+- Maximum content width: approximately 1440px.
+- Standard desktop content width: 90–94% of the viewport.
+- Main horizontal padding: 40–64px on large screens, 24–32px on tablets, 16–20px on mobile.
+- Section spacing: 44–64px on desktop and 32–44px on mobile.
+- Product-card radius: 14–20px.
+- Hero and promotional banner radius: 20–28px.
+- Buttons: pill-shaped or softly rounded, depending on the component.
+- Borders: subtle, low-contrast, and used sparingly.
+- Shadows: diffuse, light, and realistic rather than dark or dramatic.
+
+Maintain excellent alignment across the entire page. Use a consistent grid, balanced whitespace, and a clear visual hierarchy.
+
+## 4. HEADER AND NAVIGATION
+
+Create a clean, horizontal desktop header with a white background.
+
+### Desktop header layout
+
+Arrange elements as follows:
+
+Left:
+
+- Original Nexora Tech logo.
+- Create an original minimal line-art shopping bag or geometric technology emblem with a small green accent.
+- Place the brand wordmark next to the emblem.
+- Use a dark text color with green emphasis on part of the wordmark.
+- Render the logo using SVG or CSS for crispness and scalability.
+
+Center:
+
+- Accueil
+- Boutique
+- Catégories, with a downward chevron
+- Nouveautés
+- À propos
+- Contact
+
+Right:
+
+- A wide, pill-shaped search field with a search icon and placeholder text: “Rechercher un produit…”
+- Account icon
+- Shopping cart icon with a small circular item-count badge
+
+Make the header approximately 64–76px tall. Vertically center all elements and provide generous but controlled spacing.
+
+### Header interactions
+
+- Make the logo link to the homepage.
+- Highlight the active navigation item using dark green text and a thin green underline.
+- Implement a working search input with matching product results.
+- Make the category item open a refined dropdown menu.
+- Include keyboard-accessible dropdown behavior.
+- Make the account icon open an account panel or a clearly implemented sign-in interface.
+- Make the cart icon open the shopping cart drawer.
+- Update the cart badge dynamically.
+- Keep header icons consistent in stroke weight and size.
+
+### Sticky header
+
+Use a sticky header that remains visible while scrolling. When the user scrolls, optionally reduce its height slightly and add a subtle shadow or border. Avoid abrupt movements and excessive animation.
+
+### Mobile navigation
+
+On small screens:
+
+- Display the logo, search shortcut or compact search field, cart, and hamburger menu.
+- Open a slide-in navigation drawer from the side.
+- Include the same primary navigation links.
+- Make the drawer dismissible using an explicit close button, Escape, or an outside click.
+- Prevent background scrolling while the drawer is open.
+- Keep all touch targets comfortably sized.
+
+## 5. HERO SECTION
+
+This is the primary visual focal point and must receive exceptional attention.
+
+Create a large, premium hero banner directly below the header.
+
+### Desktop composition
+
+Use a wide container with approximately 20–28px corner radius and a height of approximately 360–410px on large desktop screens.
+
+Split the composition into two visually balanced zones:
+
+Left zone: approximately 48–53% of the width.
+
+Include:
+
+1. A small outlined pill badge with a sparkle or star icon and the text “NOUVEAUTÉS”.
+2. A strong headline, for example:
+
+   “La technologie\
+   à portée de main”
+3. Highlight “à portée de main” in the brand-green color.
+4. A short supporting paragraph:
+
+   “Découvrez les dernières innovations en smartphones, ordinateurs et accessoires. Des produits soigneusement sélectionnés, au meilleur rapport qualité-prix.”
+5. A prominent pill-shaped green button labeled “Découvrir la collection”, accompanied by a right-arrow icon.
+6. Three compact trust-benefit items beneath the CTA:
+   - “Livraison rapide” / “Partout en Algérie”
+   - “Paiement sécurisé” / “Transactions protégées”
+   - “Service client” / “À votre écoute”
+
+Use small, consistent green line icons for delivery, security, and customer support.
+
+Right zone: approximately 47–52% of the width.
+
+Display a high-quality, photorealistic product arrangement featuring:
+
+- A premium smartphone, front and back views.
+- A slim modern laptop.
+- Wireless earbuds in their charging case.
+- A smartwatch.
+- A subtle neutral studio environment with a small plant or architectural accent.
+
+The product arrangement should feel like a professionally art-directed electronics campaign. Products must have realistic proportions, believable materials, refined highlights, soft shadows, and carefully controlled reflections.
+
+Use a large editorial composition with products overlapping naturally. Blend the image into the pale background using a soft transition, rather than a harsh rectangular split.
+
+### Hero background
+
+Use a subtle, light neutral-to-mint background, such as a combination of `#F5F7F5`, `#EEF5F1`, and white.
+
+Optional effects:
+
+- Large translucent circular shapes behind the products.
+- Very subtle radial gradients.
+- Soft studio lighting.
+- A faint decorative curved shape that supports the product arrangement.
+
+Keep the left text area exceptionally readable. Do not put decorative elements behind text if they reduce contrast.
+
+### Hero carousel
+
+Implement a working three-slide hero carousel with original messaging and corresponding images.
+
+Possible campaign themes:
+
+- Latest technology.
+- Smart lifestyle devices.
+- Work and entertainment essentials.
+
+Requirements:
+
+- Previous and next circular controls on desktop.
+- Small pagination dots centered near the bottom.
+- Autoplay approximately every 6–7 seconds, pausing when hovered or focused.
+- Smooth transitions with no flashing.
+- Touch swipe support on mobile.
+- Keyboard accessibility.
+- Respect `prefers-reduced-motion`.
+- Ensure text and imagery change together.
+- Keep every slide fully designed and populated.
+
+If time or implementation constraints make a carousel unreliable, prioritize one excellent hero over a broken carousel. The first slide must always render immediately.
+
+## 6. CATEGORY SECTION
+
+Directly below the hero, create a spacious category-navigation section.
+
+Section heading group:
+
+- Small green horizontal line followed by an eyebrow label: “NOS CATÉGORIES”.
+- Large heading: “Explorez par catégorie”.
+- A right-aligned text link: “Voir toutes les catégories” with a right-arrow icon.
+
+Use a six-column grid on large desktop screens.
+
+Create six category tiles:
+
+1. Smartphones
+2. Ordinateurs
+3. Audio
+4. Montres connectées
+5. Gaming
+6. Accessoires
+
+### Category tile design
+
+Each tile should contain:
+
+- A large product image or carefully composed category illustration.
+- A soft pale-green or light-gray image background.
+- Rounded corners of approximately 16–20px.
+- A category title centered beneath the image.
+- Consistent image height, padding, and alignment.
+
+The category images should feature the relevant products against clean studio backgrounds. For example, show a premium phone for smartphones, a slim laptop for computers, over-ear headphones for audio, a modern smartwatch for wearables, a controller for gaming, and charging accessories for accessories.
+
+Do not put excessive text inside the image tiles.
+
+Interactions:
+
+- Make the complete tile clickable.
+- Hovering should gently lift the tile or enlarge its image by a small amount.
+- Apply a subtle green border or shadow on hover.
+- On click, navigate to or filter the corresponding category.
+- Provide a clear keyboard focus indicator.
+
+Responsive behavior:
+
+- Desktop: six columns.
+- Tablet: three columns.
+- Mobile: two columns, with an optional horizontal scrolling arrangement if it improves usability.
+- Maintain consistent image ratios and prevent overflow.
+
+## 7. FEATURED PRODUCTS / BEST SELLERS
+
+Create a premium product collection section titled:
+
+“Nos meilleures ventes”
+
+Use a small eyebrow label: “PRODUITS PHARES”.
+
+Add a brief supporting line if space allows, and provide a “Voir toute la boutique” link aligned to the right.
+
+Display four product cards per row on large desktop screens.
+
+### Product catalog
+
+Create at least 12 realistic products across all categories. Include the following example products, but use generic, legally appropriate product naming rather than implying official partnerships or authenticity that has not been verified:
+
+1. Smartphone Pro 256 Go — 99 900 DA
+2. Ultrabook Air 13 — 129 900 DA
+3. Écouteurs sans fil Pro — 6 490 DA
+4. Montre connectée Series 6 — 6 990 DA
+5. Casque audio Studio — 8 990 DA
+6. Smartphone Essentiel — 34 900 DA
+7. Ordinateur portable Performance — 159 900 DA
+8. Manette de jeu sans fil — 7 490 DA
+9. Chargeur rapide USB-C — 2 490 DA
+10. Batterie externe 20 000 mAh — 4 990 DA
+11. Écouteurs compacts sans fil — 3 990 DA
+12. Montre connectée Sport — 5 990 DA
+
+Use appropriate discount percentages only when the displayed original price supports the calculation. Avoid misleading discount claims.
+
+Use realistic ratings and review counts as demonstration data, clearly treated as sample catalog content that the store owner can replace. Do not imply the products are genuine branded devices if they are not.
+
+### Product card structure
+
+Every card should include:
+
+1. A product image area.
+2. An optional discount badge in the upper-left corner.
+3. A wishlist heart icon in the upper-right corner.
+4. A product name.
+5. A star rating and review count.
+6. A current price.
+7. An optional previous price with a strikethrough.
+8. A full-width “Ajouter au panier” button with a shopping-cart icon.
+
+### Product imagery
+
+Product images should occupy approximately 55–65% of the card's visual area.
+
+Use a consistent image canvas, with product images centered vertically and horizontally against a white, pale-gray, or subtle mint backdrop.
+
+Every product image must:
+
+- Have the correct aspect ratio.
+- Preserve the product's shape.
+- Use a consistent visual scale.
+- Have sufficient resolution.
+- Be visually coherent with the other catalog images.
+- Avoid watermarks and unrelated text.
+- Load without broken-image icons.
+
+Use `object-fit: contain` for isolated product photography.
+
+### Card styling
+
+- White background.
+- Rounded corners around 16–20px.
+- Subtle gray border.
+- Very light shadow.
+- Consistent internal padding.
+- Clear separation between image and information.
+- Green primary prices.
+- Compact review details.
+- Buttons aligned consistently at the bottom.
+
+On hover:
+
+- Lift the card slightly.
+- Strengthen the shadow very subtly.
+- Zoom the image by approximately 2–4%.
+- Change the primary button's green shade.
+- Reveal secondary product actions only if they do not create layout shifts.
+
+Avoid excessive animations and overly large shadows.
+
+### Product interactions
+
+Implement:
+
+- Add-to-cart behavior.
+- Dynamic cart quantities.
+- Wishlist toggling.
+- Product detail views or product pages.
+- Searchable catalog.
+- Category filtering.
+- Sorting by price and popularity.
+- Availability labels.
+- Responsive product grids.
+
+The product carousel controls, if used, must work. On mobile, ensure product cards remain readable and buttons are easy to tap.
+
+## 8. PRODUCT DETAILS AND SHOPPING EXPERIENCE
+
+Create a complete shopping experience rather than a decorative storefront.
+
+### Product detail page
+
+When a product is selected, display:
+
+- Main product image.
+- Product name.
+- Rating and review count.
+- Current price and previous price where applicable.
+- Short product description.
+- Product specifications.
+- Availability status.
+- Quantity selector.
+- Add-to-cart button.
+- Delivery and returns information.
+- Related products.
+
+Use a clean two-column desktop layout and a stacked mobile layout.
+
+### Shopping cart drawer
+
+Clicking the cart icon or adding a product should open an accessible cart drawer.
+
+Include:
+
+- Cart heading and close button.
+- Product thumbnails.
+- Product names and prices.
+- Quantity increase and decrease controls.
+- Remove-item controls.
+- Subtotal.
+- Delivery cost or an explanatory delivery estimate.
+- Total amount.
+- Continue-shopping link.
+- Prominent checkout CTA.
+
+Show a polished empty-cart state with an icon, short message, and “Continuer mes achats” button.
+
+Persist the cart between refreshes using local storage in the frontend demo. Handle invalid or unavailable storage safely.
+
+Do not store payment credentials or sensitive personal information in local storage.
+
+### Checkout
+
+Create a well-designed checkout flow with:
+
+- Contact information.
+- Delivery address.
+- City and postal information where relevant.
+- Shipping method.
+- Order summary.
+- Payment method selection.
+- Order confirmation state.
+
+Use clearly labeled fields, client-side validation, and accessible error messages.
+
+For a demo without a backend, provide safe simulated checkout and an explicit demo confirmation state. Never claim that a real payment was processed.
+
+Keep the checkout architecture ready for later integration with a secure backend and payment provider.
+
+## 9. PROMOTIONAL BANNER
+
+After the featured products, create a wide horizontal campaign banner with approximately 20–26px corner radius.
+
+Use a pale mint background with a refined studio product image on the right.
+
+### Left content
+
+Small outlined badge: “OFFRE EXCLUSIVE”
+
+Headline:\
+“Jusqu’à -20%”
+
+Supporting heading:\
+“sur une sélection de produits”
+
+Description:\
+“Équipez-vous avec les indispensables du quotidien et profitez de nos offres du moment.”
+
+CTA:\
+“Découvrir les offres”
+
+### Right imagery
+
+Show a beautifully art-directed composition featuring:
+
+- A slim laptop.
+- A premium smartphone.
+- Modern over-ear headphones.
+- A small plant or restrained decorative object.
+
+Use soft, natural lighting and a neutral studio background. The product arrangement should blend seamlessly into the banner rather than appear as an unrelated rectangular stock image.
+
+### Layout
+
+- Desktop: text aligned left, image aligned right.
+- Tablet: approximately equal columns.
+- Mobile: text first, product image below.
+- Keep the CTA visible without requiring excessive scrolling.
+
+Use original copy, accurate promotional terms, and a working destination for the offer CTA.
+
+## 10. SERVICE BENEFITS STRIP
+
+Immediately below the promotional banner, add a slim service-benefit section on a pale mint or soft-gray background.
+
+Display four evenly spaced items:
+
+1. **Produits sélectionnés** — “La qualité avant tout”
+2. **Livraison rapide** — “Selon votre région”
+3. **Paiement sécurisé** — “Des options adaptées”
+4. **Service client** — “Nous sommes à votre écoute”
+
+Each item should have a small dark-green line icon, a short bold heading, and one line of supporting text.
+
+Use a clean horizontal layout on desktop, a two-column layout on tablets, and a compact two-column or stacked layout on mobile.
+
+Ensure the background, icon size, typography, and vertical alignment remain consistent.
+
+Do not make unsupported claims about warranties, official manufacturer authorization, delivery times, or payment security. Keep the wording accurate to the actual capabilities of the implementation.
+
+## 11. NEWSLETTER SECTION
+
+Create a polished newsletter subscription area either immediately before the footer or integrated into the footer.
+
+Include:
+
+- A clear heading such as “Restez au courant des nouveautés”.
+- Supporting copy explaining that subscribers receive product launches and special offers.
+- A rounded email input.
+- A prominent green subscription button with a send or arrow icon.
+- Inline email validation.
+- A success confirmation state.
+- An error state if submission fails.
+
+Use an appropriate accessible label for the email field.
+
+If there is no email marketing backend, implement a clearly simulated subscription experience and provide a documented integration point. Do not claim that email addresses have been delivered to a real mailing list.
+
+## 12. FOOTER DESIGN
+
+Create a rich, deep-green footer inspired by the dark footer in the reference.
+
+Background: `#082F29`, with subtle decorative leaf-like shapes or abstract organic forms positioned in the corners using CSS or SVG. Keep the decorations low contrast and ensure they never obscure text.
+
+Use a four-column desktop layout.
+
+### Column 1: Brand
+
+- Original Nexora Tech emblem and wordmark in white and mint green.
+- Short tagline: “Votre quotidien, en mieux.”
+- One short paragraph describing the store's focus on modern technology and useful accessories.
+- Optional social links using authentic platform icons.
+
+### Column 2: Navigation
+
+Heading: “Liens utiles”
+
+Links:
+
+- Accueil
+- Boutique
+- Catégories
+- Nouveautés
+- À propos
+- Contact
+
+### Column 3: Customer service
+
+Heading: “Service client”
+
+Links:
+
+- Centre d’aide
+- Livraison
+- Retours et remboursements
+- Questions fréquentes
+- Conditions générales
+- Politique de confidentialité
+
+Create functional routes or meaningful information pages for these links. Do not invent an operational phone number, physical address, or email address. If business details are not supplied, use configurable settings and avoid displaying fabricated contact information.
+
+### Column 4: Newsletter
+
+Heading: “Notre newsletter”
+
+Supporting text:\
+“Recevez nos nouveautés et offres spéciales directement par e-mail.”
+
+Include the rounded email field and compact green submit control. Ensure the form remains readable against the dark background.
+
+### Footer bottom bar
+
+Add a subtle horizontal divider.
+
+Left:\
+“© 2026 Nexora Tech. Tous droits réservés.”
+
+Right:
+
+- Conditions générales
+- Politique de confidentialité
+- Mentions légales
+
+Keep the legal links readable, with comfortable spacing and a subtle hover effect.
+
+On mobile, stack the footer sections in a logical order and allow navigation groups to collapse only if the interaction is accessible and genuinely useful.
+
+## 13. REQUIRED PAGES AND ROUTING
+
+Build the following routes or equivalent fully functional views:
+
+- `/` — Home
+- `/boutique` — Product catalog
+- `/categorie/:slug` — Category listing
+- `/produit/:slug` — Product detail
+- `/nouveautes` — New arrivals
+- `/offres` — Special offers
+- `/a-propos` — About the store
+- `/contact` — Contact form
+- `/panier` — Cart page
+- `/commande` — Checkout
+- `/faq` — Frequently asked questions
+- `/livraison` — Delivery information
+- `/retours` — Returns policy
+- `/confidentialite` — Privacy policy
+- `/conditions` — Terms and conditions
+- `/mentions-legales` — Legal notices
+
+Use a consistent header and footer across pages.
+
+For routes requiring business-specific legal or operational information, create editable, clearly labeled configuration content instead of fabricating claims or business details.
+
+Implement a useful 404 page with a link back to the homepage.
+
+## 14. SEARCH, FILTERS, AND CATALOG CONTROLS
+
+Create a functional catalog page featuring:
+
+- A page title and introductory description.
+- Breadcrumb navigation.
+- Search field.
+- Category filter.
+- Price range filter.
+- Sorting selector.
+- Product count.
+- Responsive product grid.
+- Clear-filters control.
+- Empty-results state.
+
+Sorting options should include:
+
+- Pertinence
+- Prix croissant
+- Prix décroissant
+- Meilleures ventes
+- Nouveautés
+
+Search and filtering must operate on the actual local product dataset. Do not implement controls that merely look interactive.
+
+Use query parameters where appropriate so the current search and filter state can be shared or revisited.
+
+## 15. IMAGE GENERATION AND ART DIRECTION
+
+Generate or obtain high-quality, legally usable visual assets for every required visual area.
+
+**Critical requirement: never leave blank image boxes, gray placeholders, empty image containers, broken images, or unfinished visual sections.**
+
+If Google AI Studio has image generation capabilities available, use them to generate the required original assets. If not, use suitable existing assets from a permitted image source or generate original SVG/CSS illustrations where appropriate. Never pretend a generated image exists when it has not been created.
+
+### Required visual assets
+
+Generate or source:
+
+1. Main hero composition with smartphone, laptop, smartwatch, and wireless earbuds.
+2. Three coordinated hero campaign images if using a carousel.
+3. Smartphone category image.
+4. Laptop category image.
+5. Headphones category image.
+6. Smartwatch category image.
+7. Gaming controller category image.
+8. Electronics accessories category image.
+9. At least 12 coherent product images.
+10. Promotional campaign banner image.
+11. Optional subtle footer decoration.
+
+### Visual asset style
+
+Use a consistent professional product-photography direction:
+
+- Premium studio photography.
+- Soft natural or diffused studio lighting.
+- Realistic product proportions and textures.
+- Neutral backgrounds with white, light gray, and pale mint.
+- Gentle, believable shadows.
+- Balanced highlights and reflections.
+- Centered compositions with clean negative space.
+- Consistent exposure and color temperature.
+- Crisp, high-resolution detail.
+- No watermarks.
+- No random typography embedded in images.
+- No artificial brand logos that imply authorization.
+- No mismatched collage styles.
+
+Use wide images for the hero and promotional banner, square images for category tiles, and square or 4:3 images for product cards.
+
+Prefer separate optimized image files over a single large image containing the entire website. The layout, text, buttons, cards, and navigation must remain real HTML and React components.
+
+For product images, preserve transparency when appropriate or use a uniform light background. Use `object-fit: contain` for isolated product renders.
+
+Use descriptive `alt` text for informative images and empty alt attributes for purely decorative assets.
+
+### Image delivery reliability
+
+- Store local assets in a well-organized public assets directory when possible.
+- Use predictable filenames.
+- Optimize image sizes and modern formats such as WebP or AVIF where supported.
+- Preserve an aspect-ratio container to prevent layout shifts.
+- Provide a graceful fallback to a locally available asset if a remote image fails.
+- Do not use random image URLs that may stop working.
+- Do not use the same unrelated image for every product.
+- Do not leave unresolved assets for the client to fill in manually.
+
+If image generation cannot be performed automatically, choose reliable permitted assets or create visually consistent CSS/SVG artwork before finishing the website.
+
+## 16. ANIMATIONS AND MICRO-INTERACTIONS
+
+Make the site feel refined and responsive, not overanimated.
+
+Use:
+
+- Smooth anchor scrolling where appropriate.
+- Subtle card hover lift.
+- Gentle product image zoom.
+- Smooth cart drawer entrance and exit.
+- Fade-and-slide section entrances.
+- Small button hover transitions.
+- Smooth dropdown opening.
+- Subtle carousel transitions.
+- Heart icon state changes for wishlists.
+- Toast notifications when adding items to the cart.
+- Animated cart count updates.
+- Clear input focus states.
+- Skeleton loading states only when genuine loading is occurring.
+
+Animation guidelines:
+
+- Use CSS transitions for simple hover effects.
+- Prefer transform and opacity for performant animation.
+- Keep most interactions between approximately 150–300ms.
+- Avoid excessive bounce, spinning, flashing, or parallax.
+- Do not animate every element continuously.
+- Respect `prefers-reduced-motion`.
+- Avoid large layout shifts during transitions.
+- Ensure the site remains fully usable when animations are disabled.
+
+For scroll-based reveal effects, use a lightweight Intersection Observer implementation where appropriate. Avoid animation libraries unless they provide clear value.
+
+## 17. RESPONSIVE DESIGN REQUIREMENTS
+
+The website must be fully responsive from small mobile screens to large desktop monitors.
+
+Test layouts at approximately:
+
+- 320px
+- 375px
+- 430px
+- 768px
+- 1024px
+- 1280px
+- 1440px
+- 1920px
+
+### Large desktop: 1440px and above
+
+- Center the main content within a maximum-width container.
+- Use a six-column category grid.
+- Use four product cards per row.
+- Display the full desktop navigation.
+- Use a wide hero with a large product composition.
+- Maintain generous whitespace without making the content feel sparse.
+
+### Desktop and laptop: 1024–1439px
+
+- Preserve the full shopping experience.
+- Reduce horizontal padding and navigation gaps as needed.
+- Use four product cards per row where comfortable, or three if the available width requires it.
+- Ensure the search field and header actions remain visible.
+- Scale the hero typography and image proportionally.
+
+### Tablet: 768–1023px
+
+- Use a compact navigation layout.
+- Consider hiding secondary navigation links inside a menu.
+- Use three category columns.
+- Use two or three product columns depending on available width.
+- Reduce hero headline size and spacing.
+- Maintain balanced text-to-image proportions.
+- Stack or simplify the promotional banner if needed.
+
+### Mobile: 320–767px
+
+- Use a compact header with a working menu and cart.
+- Prevent horizontal overflow at all viewport widths.
+- Stack hero text above the hero image.
+- Place the main CTA where it is immediately visible.
+- Use a mobile hero image with an appropriate crop and aspect ratio.
+- Use two category columns.
+- Use two product columns where the card contents remain readable; switch to one column only when the viewport or card requirements demand it.
+- Reduce product card padding and button height appropriately.
+- Keep product prices and discount labels legible.
+- Stack promotional banner content vertically.
+- Make forms full width.
+- Stack footer sections.
+- Keep touch targets approximately 44px or larger.
+- Ensure cart drawers and mobile menus fit the viewport and support scrolling.
+- Use `min-width: 0`, responsive grids, and proper image sizing to prevent overflow.
+
+Use mobile-first CSS and responsive breakpoints. Never simply shrink the desktop design until it fits. Recompose layouts intelligently for each screen size.
+
+## 18. ACCESSIBILITY AND USABILITY
+
+Follow accessible web design best practices.
+
+Include:
+
+- Semantic header, navigation, main, section, and footer elements.
+- Proper heading order.
+- Keyboard navigation for all controls.
+- Visible focus states.
+- Sufficient color contrast.
+- Accessible labels for inputs.
+- Helpful validation messages.
+- Accessible names for icon-only buttons.
+- Appropriate ARIA attributes for drawers, dialogs, and menus.
+- Correct dialog focus management.
+- Escape-key support for dismissible overlays.
+- Reduced-motion support.
+- Meaningful image alternative text.
+- Clear disabled and loading states.
+
+Do not communicate important information through color alone.
+
+Do not use non-semantic clickable `div` elements when buttons or links are appropriate.
+
+## 19. PERFORMANCE AND SEO
+
+Optimize the website for production quality.
+
+Performance:
+
+- Lazy-load below-the-fold images.
+- Prioritize the main hero image.
+- Use responsive image dimensions.
+- Prevent layout shifts by specifying image dimensions or aspect ratios.
+- Avoid unnecessary JavaScript.
+- Keep components lightweight.
+- Use efficient React rendering.
+- Avoid expensive animation effects.
+- Ensure all images have working fallbacks.
+- Remove unused dependencies and debug code.
+
+SEO:
+
+- Use meaningful page titles and meta descriptions.
+- Include a canonical URL configuration point.
+- Add Open Graph metadata.
+- Use descriptive headings.
+- Use descriptive image alt text.
+- Generate clean URLs.
+- Add structured data for products only when the required fields are accurate.
+- Include a sitemap and robots configuration where appropriate.
+- Use French language metadata such as `lang="fr"`.
+- Ensure product pages can have unique titles and descriptions.
+- Avoid duplicate page metadata.
+
+Do not invent customer reviews, certifications, guarantees, delivery statistics, or business claims as factual information.
+
+## 20. SECURITY AND PRODUCTION READINESS
+
+Build with production-safe practices.
+
+- Validate all user-entered data.
+- Avoid unsafe HTML injection.
+- Keep API keys and secrets out of frontend code.
+- Use environment variables for configurable public settings.
+- Document which environment variables are needed.
+- Do not expose private credentials in client bundles.
+- Do not claim that a frontend-only cart is a secure payment system.
+- Clearly separate demo functionality from production integrations.
+- Use a backend for real orders, inventory, user accounts, and payments when the store is ready for real transactions.
+- Provide clear error handling for failed requests.
+- Prevent accidental duplicate checkout submissions in the demo flow.
+- Include a sensible loading state for asynchronous operations.
+- Do not fabricate backend connectivity.
+
+Make the project easy to extend with a real database, authentication provider, payment gateway, shipping service, and transactional email provider later.
+
+## 21. HOSTINGER DEPLOYMENT COMPATIBILITY
+
+The final project must be practical to deploy on Hostinger.
+
+Provide:
+
+- Complete React and TypeScript source code.
+- A valid `package.json`.
+- Vite configuration.
+- Tailwind configuration if used by the selected setup.
+- All required source files and local assets.
+- A production build script.
+- A clear project directory structure.
+- A `.env.example` file if environment variables are required.
+- A README containing installation, development, build, and deployment instructions.
+- Correct handling of client-side routing on refresh.
+- A Hostinger-compatible deployment approach.
+
+For a standard static deployment, ensure the project can be built using:
+
+`npm install`
+
+`npm run build`
+
+The final production files should be generated in the standard Vite `dist` directory.
+
+If deploying to Hostinger shared hosting, explain in the README that the contents of `dist` should be uploaded to the correct public web directory, usually `public_html`, and configure the required rewrite rules for React Router so refreshing a nested route does not return a 404.
+
+Include a suitable `.htaccess` example for Apache-based hosting when necessary. Ensure existing real files are served normally and client-side routes fall back to `index.html`.
+
+If the chosen architecture requires a server, database, or server-side environment that is not supported by static hosting, document the requirement clearly and provide a compatible deployment alternative rather than pretending that frontend hosting alone is sufficient.
+
+Do not make the site depend on a local development server after deployment.
+
+## 22. CONTENT AND CONVERSION STRATEGY
+
+Use natural French copy designed to encourage confident purchasing.
+
+Emphasize:
+
+- Product discovery.
+- Clear pricing.
+- Relevant discounts.
+- Useful category navigation.
+- Straightforward product information.
+- Simple add-to-cart actions.
+- Easy-to-understand delivery information.
+- Customer support.
+- Trustworthy checkout presentation.
+- Related product discovery.
+
+Use strong, concise CTA labels, including:
+
+- “Découvrir la collection”
+- “Explorer les produits”
+- “Ajouter au panier”
+- “Voir le produit”
+- “Découvrir les offres”
+- “Continuer mes achats”
+- “Passer à la commande”
+- “Confirmer ma commande”
+
+Use primary CTAs sparingly and consistently.
+
+Do not overwhelm users with popups, unnecessary urgency, fake countdown timers, fake stock warnings, or misleading scarcity claims.
+
+## 23. FINAL QUALITY ASSURANCE
+
+Before considering the website complete, inspect and verify the entire implementation.
+
+Check the following:
+
+### Visual quality
+
+- The homepage closely follows the intended premium visual direction.
+- The brand identity is original.
+- All sections have correct spacing and alignment.
+- The hero is visually compelling.
+- Product photography is consistent.
+- The cards are clean and readable.
+- The green color palette is applied consistently.
+- The footer looks polished.
+- No image containers are empty.
+- No elements overlap.
+- No headings are unexpectedly clipped.
+- No horizontal scrollbar appears on mobile.
+
+### Functional quality
+
+- Navigation links work.
+- Search returns appropriate products.
+- Category links navigate correctly.
+- Product detail views work.
+- Add-to-cart updates the cart.
+- Quantity controls work.
+- Removing products works.
+- Cart totals recalculate correctly.
+- Wishlist controls toggle state.
+- Sorting and filters work.
+- Newsletter validation works.
+- Contact form validation works.
+- Checkout validation works.
+- Demo order confirmation is clear and honest.
+- Empty states and error states are present.
+- Menus and drawers can be opened and closed.
+- All CTAs have meaningful destinations or actions.
+
+### Technical quality
+
+- TypeScript errors are resolved.
+- The application compiles.
+- The production build succeeds.
+- No missing imports remain.
+- No broken image assets remain.
+- No avoidable console errors occur.
+- No inaccessible icon-only controls remain.
+- Nested routes work after refresh when correctly deployed.
+- No secrets are exposed.
+- No fake backend integration is presented as real.
+
+### Responsive quality
+
+- Inspect the full homepage at mobile, tablet, laptop, and desktop widths.
+- Verify that the navigation adapts correctly.
+- Verify that category and product grids reflow properly.
+- Verify that all images remain proportional.
+- Verify that cart and menu drawers fit smaller screens.
+- Verify that text does not become too small.
+- Verify that every important CTA remains usable.
+
+Fix all issues discovered during testing before delivering the final project.
+
+## 24. EXECUTION INSTRUCTIONS
+
+Do not respond with a plan, wireframe description, tutorial, or a few isolated components.
+
+**Build the complete website.**
+
+Start by establishing the project structure and design system. Then implement the shared layout, header, hero, category grid, featured products, promotional banner, service strip, newsletter, footer, catalog, product details, cart, checkout, and supporting pages.
+
+Generate or obtain the required visual assets as part of the implementation wherever supported. Ensure the first render looks complete and polished, with no blank hero, empty product cards, unfinished sections, or broken assets.
+
+Populate the store with coherent demonstration products and make every core interaction functional within the implemented environment.
+
+If the environment supports live preview, run the website and inspect the actual rendered result. Correct visual and functional issues rather than stopping at the first successful render.
+
+Make sensible design and implementation decisions independently. Do not ask me to choose colors, layouts, products, or component libraries.
+
+If a requested external integration is unavailable, build the best working local implementation and clearly document the integration point.
+
+Deliver a cohesive, professional, deployment-ready project—not just an attractive homepage.
+
+## FINAL SUCCESS CRITERION
+
+The finished website should feel like a premium, commercially credible electronics e-commerce store: elegant white space, sophisticated forest-green branding, beautiful original product imagery, a striking hero section, perfectly aligned product cards, clear pricing, refined animations, excellent mobile responsiveness, functional shopping interactions, and a polished deep-green footer.
+
+A visitor should be able to browse products, search and filter the catalog, inspect a product, add it to the cart, adjust quantities, proceed through the demo checkout, and navigate all major sections without encountering broken controls or unfinished content.
+
+The result must be original, maintainable, accessible, visually consistent, and practical to deploy on Hostinger. Prioritize **design quality, working functionality, reliable imagery, responsive behavior, and production build success** over unnecessary complexity.
+
+Shorten the prompt for better execution

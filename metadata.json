@@ -1,0 +1,6 @@
+{
+  "name": "Nexora Tech — Électronique & Technologie Premium",
+  "description": "Boutique en ligne premium d'électronique et d'innovations technologiques en Algérie : smartphones, ordinateurs, audio et accessoires.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
